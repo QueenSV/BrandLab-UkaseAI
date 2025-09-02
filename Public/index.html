@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="generator" content="BrandLab Powered by UkaseAI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrandLab • Powered by UkaseAI</title>
+    <!-- © BrandLab Powered by UkaseAI -->
+    <style>
+        body {
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: #0b0b0e;
+            color: #e8e8ef;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 260px;
+            background: #16161a;
+            padding: 16px;
+            border-right: 1px solid #26262b;
+        }
+
+        .sidebar h1 {
+            font-size: 18px;
+            margin: 8px 0 16px;
+            background: linear-gradient(90deg, #a78bfa, #ec4899);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .nav button {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            background: #1f1f25;
+            border: 1px solid #2b2b33;
+            color: #d0d0d7;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .nav button.active {
+            background: #6d28d9;
+            border-color: #6d28d9;
+            color: white;
+        }
+
+        .main {
+            flex: 1;
+            padding: 24px;
+            overflow: auto;
+        }
+
+        .card {
+            background: #121216;
+            border: 1px solid #23232a;
+            border-radius: 14px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .row>* {
+            flex: 1;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            background: #1a1a20;
+            color: #e8e8ef;
+            border: 1px solid #2b2b33;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        button.primary {
+            background: #7c3aed;
+            border: none;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button.secondary {
+            background: #1f1f25;
+            color: #e8e8ef;
+            border: 1px solid #2b2b33;
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .muted {
+            color: #a3a3ad;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 12px;
+        }
+
+        img.preview {
+            max-width: 100%;
+            border: 1px solid #2b2b33;
+            border-radius: 10px;
+            background: #0f0f13;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #27272f;
+            border: 1px solid #3a3a44;
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-size: 12px;
+            color: #c4c4cd;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <!-- © BrandLab Powered by UkaseAI -->
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

@@ -1,21 +1,31 @@
 {
-  "name": "functions",
-  "main": "index.js",
+  "name": "brandlab",
   "private": true,
-  "engines": { "node": "18" },
   "scripts": {
-    "start": "firebase emulators:start --only functions"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.3"
   },
   "dependencies": {
-    "@sendgrid/mail": "^8.1.0",
-    "axios": "^1.7.2",
-    "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "firebase-admin": "^12.5.0",
-    "firebase-functions": "^4.8.0",
-    "png-chunk-text": "^1.0.0",
-    "png-chunks-encode": "^1.0.0",
-    "png-chunks-extract": "^1.0.0",
-    "sharp": "^0.33.4"
-  }
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "version": "1.0.0",
+  "description": "Deploy steps:\r 1) npm install\r 2) cd functions && npm install && cd ..\r 3) Place logos:\r    - public/assets/brandlab-logo.png\r    - public/assets/ukaseai-logo.png\r    - functions/assets/brandlab-logo.png\r    - functions/assets/ukaseai-logo.png\r 4) Set secrets:\r    - firebase functions:config:set ai.key=\"YOUR_GEMINI_API_KEY\"\r    - firebase functions:config:set email.provider=\"sendgrid\" email.sendgrid_api_key=\"YOUR_SENDGRID_KEY\" email.from=\"BrandLab <no-reply@yourdomain>\"\r    - firebase functions:config:set brand.unsubscribe_url=\"https://yourdomain/unsubscribe\" brand.address=\"Your Company, Tokyo, Japan\"\r 5) npm run build\r 6) firebase deploy",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "n"
+  },
+  "keywords": [
+    "brandlab",
+    "ukaseai"
+  ],
+  "author": "king xin",
+  "license": "ISC"
 }
