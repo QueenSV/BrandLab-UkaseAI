@@ -1,0 +1,21 @@
+{
+  "name": "functions",
+  "main": "index.js",
+  "private": true,
+  "engines": { "node": "18" },
+  "scripts": {
+    "start": "firebase emulators:start --only functions"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.0",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.5.0",
+    "firebase-functions": "^4.8.0",
+    "png-chunk-text": "^1.0.0",
+    "png-chunks-encode": "^1.0.0",
+    "png-chunks-extract": "^1.0.0",
+    "sharp": "^0.33.4"
+  }
+}
